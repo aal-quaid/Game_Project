@@ -1,8 +1,9 @@
-public class Item {
+public class Item extends Game {
     private String name;
     private String description;
 
     public Item(String n, String d){
+        super();
         name = n;
         description = d;
     }

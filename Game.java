@@ -110,9 +110,46 @@ public class Game {
             
             case "use":
 
+                System.out.println("You are trying to use the " + words[1] + ".");
+                
+                if(currentRoom.getItem(words[1]) != null){
+                    currentRoom.getItem(words[1]).use();
+                }
+
+                else{
+
+                    if (getItemInventory(words[1]) == null){
+                        System.out.println("There is no such item");
+                    }
+
+                    else{
+                        getItemInventory(words[1]).use();
+                        System.out.println();
+                    }
+                }
+
                 break;
             
             case "open":
+
+                System.out.println("You are trying to open the " + words[1] + ".");
+                
+                if(currentRoom.getItem(words[1]) != null){
+                    currentRoom.getItem(words[1]).open();
+                    System.out.println();
+                }
+
+                else{
+
+                    if (getItemInventory(words[1]) == null){
+                        System.out.println("There is no such item");
+                    }
+
+                    else{
+                        getItemInventory(words[1]).open();
+                        System.out.println();
+                    }
+                }
 
                 break;
 
