@@ -29,7 +29,6 @@ public class Game {
 
 
     public static void runGame(){
-        ///Room currentRoom = World.buildWorld(); /// maybe keep it
         Scanner input = new Scanner(System.in);
 
         String command; // Player's command
@@ -46,7 +45,7 @@ public class Game {
             case "s":
             case "u":
             case "d":
-                //currentRoom = currentRoom.getExit(command.charAt(0));
+            
                 Room nextRoom = currentRoom.getExit(command.charAt(0));
 
                 if(nextRoom == null)

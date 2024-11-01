@@ -62,7 +62,7 @@ public class World {
 
         janitorCloset.addExit(schoolHall, 's'); // Janitor's closet
 
-        janitorCloset.addItem("plunger",plunger);                   // plunger item
+        janitorCloset.addItem("plunger", plunger);                   // plunger item
 
         secondFloor.addExit(schoolHall, 'd'); // Upstaris/rooms
         secondFloor.addExit(scienceRoom, 'w');

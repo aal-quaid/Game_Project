@@ -15,9 +15,6 @@ public class Safe extends Item{
             Item diamond = new Item("diamond", "A sparkley diamond");
             inventory.add(diamond);
         }
-
-
     }
-    
 }
 

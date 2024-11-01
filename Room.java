@@ -73,17 +73,6 @@ public class Room {
     public void removeItem(String name){
         items.remove(name);
     }
-
-    // public Item takeItem(){
-    //     Item x = i;
-    //     i = null;
-    //     return x;
-    // }
-
-
-
-
-
 }
 
 
