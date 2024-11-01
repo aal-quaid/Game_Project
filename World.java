@@ -1,7 +1,3 @@
-package Game;
-
-//import java.util.HashMap;
-
 public class World {
     // Builds the game world.
     // Returns the room the player starts in.
@@ -37,6 +33,10 @@ public class World {
         Item shoes = new Item("shoes", "Black pair of shoes");
         Item ball = new Item("baseball", "Dirty baseball");
 
+        Combination combination = new Combination("combination", "combination for the black safe");
+        Safe safe = new Safe("safe", "It's an impressive safe!");
+
+
 
 
         schoolHall.addExit(frontDoor, 's'); //School Hall
@@ -67,6 +67,9 @@ public class World {
         secondFloor.addExit(schoolHall, 'd'); // Upstaris/rooms
         secondFloor.addExit(scienceRoom, 'w');
         scienceRoom.addExit(secondFloor, 'e');
+
+        scienceRoom.addItem("combination", combination); // combination
+
         secondFloor.addExit(principalOffice, 'e');
         principalOffice.addExit(secondFloor, 'w');
 
@@ -76,6 +79,7 @@ public class World {
         restRoom.addExit(secondFloor, 's');
 
         storageRoom.addExit(schoolHall, 'u'); // Storage room
+        storageRoom.addItem("safe", safe); // safe
 
 
         return schoolHall; // Starting Room

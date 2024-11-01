@@ -1,6 +1,3 @@
-
-package Game;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,11 +6,30 @@ public class Game {
         runGame();
     }
 
+    public static void print(Object obj){
+        System.out.println(obj.toString());
+    }
+
+    static Room currentRoom = World.buildWorld();
+
+    public static Room getCurrentRoom(){
+        return currentRoom;
+    }
+
+    public static Item getItemInventory(String name){
+        for(Item c : inventory){
+            if(c.getName().equals(name)){
+                return c;
+            }
+        }
+        return null;
+    }
+
     static ArrayList<Item> inventory = new ArrayList<Item>();
 
 
     public static void runGame(){
-        Room currentRoom = World.buildWorld();
+        ///Room currentRoom = World.buildWorld(); /// maybe keep it
         Scanner input = new Scanner(System.in);
 
         String command; // Player's command
@@ -89,6 +105,14 @@ public class Game {
                     if(found == false)
                         System.out.println("There is no such item.\n");
                 }
+
+                break;
+            
+            case "use":
+
+                break;
+            
+            case "open":
 
                 break;
 

@@ -1,5 +1,3 @@
-package Game;
-
 import java.util.HashMap;
 
 public class Room {
