@@ -29,14 +29,26 @@ public class World {
 
         Item bottle = new Item("bottle", "Empty beer bottle");
         Item plunger = new Item("plunger", "Nasty plunger");
-        Item key = new Item("key", "A gold key");
         Item shoes = new Item("shoes", "Black pair of shoes");
         Item ball = new Item("baseball", "Dirty baseball");
 
         Combination combination = new Combination("combination", "combination for the black safe");
         Safe safe = new Safe("safe", "It's an impressive safe!");
+        Key key = new Key("key", "A gold key");
 
 
+        frontDoor.setLock(true);
+        schoolHall.setLock(false);
+        gym.setLock(false);
+        lockerRoom.setLock(false);
+        cafeteria.setLock(false);
+        kitchen.setLock(false);
+        janitorCloset.setLock(false);
+        secondFloor.setLock(false);
+        scienceRoom.setLock(false);
+        principalOffice.setLock(false);
+        restRoom.setLock(false);
+        storageRoom.setLock(true);
 
 
         schoolHall.addExit(frontDoor, 's'); //School Hall
@@ -45,58 +57,46 @@ public class World {
         schoolHall.addExit(janitorCloset, 'n');
         schoolHall.addExit(secondFloor, 'u');
         schoolHall.addExit(storageRoom, 'd');
-        schoolHall.setLock(false);
-
+        
         frontDoor.addExit(schoolHall, 'n'); //Front door(exit)
-        frontDoor.setLock(true);
-
-
+        
         gym.addExit(schoolHall, 'e'); // Gym/lockers
         gym.addExit(lockerRoom, 'n');
-        gym.setLock(false);
-
+    
         lockerRoom.addExit(gym, 's');
-
         lockerRoom.addItem("bottle", bottle);             // Bottle item
         lockerRoom.addItem("shoes", shoes);             // show item
         lockerRoom.addItem("baseball", ball);             // baseball item
 
-        lockerRoom.setLock(false);
+        
 
         cafeteria.addExit(schoolHall, 'w'); // Cafeteria/Kitchen
         cafeteria.addExit(kitchen, 'e');
-        cafeteria.setLock(false);
+        
         kitchen.addExit(cafeteria, 'w');
-        kitchen.setLock(false);
+        
 
         janitorCloset.addExit(schoolHall, 's'); // Janitor's closet
-        janitorCloset.setLock(false);
-
         janitorCloset.addItem("plunger", plunger);                   // plunger item
 
         secondFloor.addExit(schoolHall, 'd'); // Upstaris/rooms
         secondFloor.addExit(scienceRoom, 'w');
-        secondFloor.setLock(false);
         scienceRoom.addExit(secondFloor, 'e');
-        scienceRoom.setLock(false);
+        
 
         scienceRoom.addItem("combination", combination); // combination
 
         secondFloor.addExit(principalOffice, 'e');
         principalOffice.addExit(secondFloor, 'w');
-        principalOffice.setLock(false);
-
+        
         principalOffice.addItem("key",key);               // Key item
 
         secondFloor.addExit(restRoom, 'n');
         restRoom.addExit(secondFloor, 's');
-        restRoom.setLock(false);
-
+        
         storageRoom.addExit(schoolHall, 'u'); // Storage room
         storageRoom.addItem("safe", safe); // safe
-        storageRoom.setLock(true);
-
-
+        
         return schoolHall; // Starting Room
     }
 }
