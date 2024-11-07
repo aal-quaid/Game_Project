@@ -2,6 +2,7 @@ import java.util.HashMap;
 
 public class Room {
     private String description;
+    private String name;
     private Room east;
     private Room west;
     private Room north;
@@ -10,8 +11,11 @@ public class Room {
     private Room down;
     private HashMap<String, Item> items = new HashMap<String, Item>();
 
-    public Room(String desc){
+    private boolean lock;
+
+    public Room(String n, String desc){
         description = desc;
+        name = n;
     }
 
     public Room getExit(char x){
@@ -73,6 +77,23 @@ public class Room {
     public void removeItem(String name){
         items.remove(name);
     }
+
+    public void setLock(boolean bool){
+        lock = bool;
+    }
+
+    public boolean getLock(){
+        return lock;
+    }
+
+    public void setRoomName(String n){
+        name = n;
+    }
+
+    public String getRoomName(){
+        return name;
+    }
+
 }
 
 

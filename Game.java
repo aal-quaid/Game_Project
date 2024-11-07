@@ -50,6 +50,10 @@ public class Game {
 
                 if(nextRoom == null)
                     System.out.println("You can't go that way.");
+
+                else if(nextRoom.getLock() == true){
+                    System.out.println("This room is locked");
+                }
                 else
                     currentRoom = nextRoom;
                 break;
