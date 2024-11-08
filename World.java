@@ -32,7 +32,8 @@ public class World {
         Item shoes = new Item("shoes", "Black pair of shoes");
         Item ball = new Item("baseball", "Dirty baseball");
 
-        Item computer = new Item("computer", "the principal's computer");
+        Computer computer = new Computer("computer", "the principal's computer");
+        Robot robot = new Robot("robot", "a small robot");
 
         Combination combination = new Combination("combination", "combination for the black safe");
         Safe safe = new Safe("safe", "It's an impressive safe!");
@@ -99,6 +100,7 @@ public class World {
         
         storageRoom.addExit(schoolHall, 'u'); // Storage room
         storageRoom.addItem("safe", safe); // safe
+        storageRoom.addItem("robot", robot);;       //robot item
         
         return schoolHall; // Starting Room
     }

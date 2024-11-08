@@ -35,4 +35,6 @@ public class Item extends Game {
     public void use(){
         Game.print("You can't use that!");
     }
+
+    
 }

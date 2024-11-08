@@ -6,14 +6,17 @@ public class Computer extends Item {
 
     public void open(){
 
-        if(getItemInventory("combination") == null){
-            Game.print("The safe is locked and you don't have the combination");
+        if(getItemInventory("code") == null){
+            Game.print("You don't have the passcode to unlock this divice");
         }
 
         else{
-            Game.print("Using the combination, you open the safe and find a diamond inside! Naturally, you pocket the diamond.");
-            Item diamond = new Item("diamond", "A sparkley diamond");
-            inventory.add(diamond);
+            Game.print("Using the code you received from the robot, you unlock the computer.\n");
+            Game.print("As you browse thorugh the laptop, you find the secruity system that can unlock the front door in the school hall");
+            Game.print("You can now use the software");
+            Software software = new Software("software", "a system that can unlock the front door");
+            inventory.add(software);
+            
         }
     }
 }
