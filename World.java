@@ -32,6 +32,8 @@ public class World {
         Item shoes = new Item("shoes", "Black pair of shoes");
         Item ball = new Item("baseball", "Dirty baseball");
 
+        Item computer = new Item("computer", "the principal's computer");
+
         Combination combination = new Combination("combination", "combination for the black safe");
         Safe safe = new Safe("safe", "It's an impressive safe!");
         Key key = new Key("key", "A gold key");
@@ -90,6 +92,7 @@ public class World {
         principalOffice.addExit(secondFloor, 'w');
         
         principalOffice.addItem("key",key);               // Key item
+        principalOffice.addItem("computer", computer);      // computer item
 
         secondFloor.addExit(restRoom, 'n');
         restRoom.addExit(secondFloor, 's');
