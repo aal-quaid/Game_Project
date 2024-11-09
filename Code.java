@@ -5,6 +5,6 @@ public class Code extends Item {
 
     @Override
     public void use(){
-        Game.print("If you find a device, try using the code to open it!\n");
+        Game.print("If you find a device, try opening it!\n");
     }
 }
