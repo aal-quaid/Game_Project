@@ -11,7 +11,7 @@ public class Diamond extends Item {
         }
 
         else{
-            Game.print("Using the dimaond, you activated the robot. The robot begins to speak:\n \"Hello Player! I think you will find this code to be useful: 56964! \"");
+            Game.print("Using the dimaond, you activated the robot. The robot begins to speak:\n\"Hello Player! I think you will find this code to be useful: 56964! \"");
             Code code = new Code("code", "Code: 56964");
             inventory.add(code);
         }
