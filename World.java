@@ -19,6 +19,8 @@ public class World {
 
         Room secondFloor  = new Room("Second Floor", "You are on the second floor.");
 
+        Room roofTop = new Room("Roof Top","You are on the roof top.");
+
         Room scienceRoom  = new Room("Science Room","You are in the science lab room.");
 
         Room principalOffice  = new Room("Principal Office", "You are in the principal's office.");
@@ -31,6 +33,9 @@ public class World {
         Item plunger = new Item("plunger", "Nasty plunger");
         Item shoes = new Item("shoes", "Black pair of shoes");
         Item ball = new Item("baseball", "Dirty baseball");
+
+        Bucket bucket = new Bucket("bucket", "A blue large bucket");
+        BathTub bathtub = new BathTub("bathtub", "A large empty bathtub");
 
         Computer computer = new Computer("computer", "the principal's computer");
         Robot robot = new Robot("robot", "a small robot");
@@ -48,6 +53,7 @@ public class World {
         kitchen.setLock(false);
         janitorCloset.setLock(false);
         secondFloor.setLock(false);
+        roofTop.setLock(true);
         scienceRoom.setLock(false);
         principalOffice.setLock(false);
         restRoom.setLock(false);
@@ -77,6 +83,7 @@ public class World {
         cafeteria.addExit(kitchen, 'e');
         
         kitchen.addExit(cafeteria, 'w');
+        kitchen.addItem("bucket", bucket);
         
 
         janitorCloset.addExit(schoolHall, 's'); // Janitor's closet
@@ -84,6 +91,11 @@ public class World {
 
         secondFloor.addExit(schoolHall, 'd'); // Upstaris/rooms
         secondFloor.addExit(scienceRoom, 'w');
+        secondFloor.addExit(roofTop, 'u');
+
+        roofTop.addExit(secondFloor, 'd');
+        roofTop.addItem("bathtub", bathtub);
+
         scienceRoom.addExit(secondFloor, 'e');
         
 
@@ -103,5 +115,26 @@ public class World {
         storageRoom.addItem("robot", robot);;       //robot item
         
         return schoolHall; // Starting Room
+    }
+
+    public static Room buildDreamWorld(){
+        Room dreamWorld = new Room("Dream World", "You are in the dream world");
+
+        Room gasStation = new Room("Gas Station", "You are in the gas station");
+
+        dreamWorld.setLock(false);
+        gasStation.setLock(false);
+
+        Item container = new Item("container", "a huge fuel container");
+
+        BathTub bathtub = new BathTub("bathtub", "A large bathtub filled with water that is hooked up to a machine");
+
+        dreamWorld.addExit(gasStation, 'n');
+        gasStation.addExit(dreamWorld, 's');
+
+        dreamWorld.addItem("container", container);
+        dreamWorld.addItem("bathtub", bathtub);
+
+        return dreamWorld;
     }
 }

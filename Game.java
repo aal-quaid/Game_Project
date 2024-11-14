@@ -68,6 +68,10 @@ public class Game {
                 if(currentRoom.getItem(words[1]) == null)
                     System.out.println("No items found\n");
 
+                else if(words[1].equals("bathtub")){
+                    System.out.println("You can't take the bathtub. Are you crazy!?\n");
+                }
+
                 else{
                     inventory.add(currentRoom.getItem(words[1]));
                     System.out.println("You picked up the " + currentRoom.getItem(words[1]).getName() + "\n");
@@ -150,6 +154,28 @@ public class Game {
 
                     else{
                         getItemInventory(words[1]).open();
+                        System.out.println();
+                    }
+                }
+
+                break;
+            
+            case "fill":
+                System.out.println("You are trying to fill the " + words[1] + ".");
+                
+                if(currentRoom.getItem(words[1]) != null){
+                    currentRoom.getItem(words[1]).fill();
+                    System.out.println();
+                }
+
+                else{
+
+                    if (getItemInventory(words[1]) == null){
+                        System.out.println("There is no such item");
+                    }
+
+                    else{
+                        getItemInventory(words[1]).fill();
                         System.out.println();
                     }
                 }
