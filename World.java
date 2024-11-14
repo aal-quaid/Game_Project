@@ -117,7 +117,7 @@ public class World {
         return schoolHall; // Starting Room
     }
 
-    public static Room buildDreamWorld(){
+    public static Room buildDreamWorld(){       // this creates the dream world and its' rooms.
         Room dreamWorld = new Room("Dream World", "You are in the dream world");
 
         Room gasStation = new Room("Gas Station", "You are in the gas station");
