@@ -10,7 +10,7 @@ public class Puppy extends NPC {
     @Override
     public void talk() {
         if(count == 0){
-            say("Hi! I'm an adorable puppy!");
+            say("Hi! I'm an adorable puppy!\n");
             String[] options = {
                 "Yes you are! Who's a good boy?",
                 "Ew, no. You're actually kinda hideous."
@@ -19,7 +19,7 @@ public class Puppy extends NPC {
             count++; 
         }
         else if(count == 1){
-            say("Hey! Wanna play fetch? Say yes! Say yes!");
+            say("Hey! Wanna play fetch? Say yes! Say yes!\n");
             String[] options = {
                 "Yes! I love fetch!",
                 "No. I am a horrible person and don't like playing with puppies."
@@ -29,7 +29,7 @@ public class Puppy extends NPC {
         }
 
         else{
-            say("Yip!");
+            say("Yip!\n");
             count++;
         }
     }
@@ -40,13 +40,13 @@ public class Puppy extends NPC {
         if(count == 0){ 
             switch(option) {
                 case 1:
-                    say("I am! I'm a good boy!");
+                    say("I am! I'm a good boy!\n");
     
                     break;
     
                 case 2:
                     say("I am adorable! Why are you so mean?");
-                    Game.print("The puppy bites you. You deserve it.");
+                    Game.print("The puppy bites you. You deserve it.\n");
     
                 break;
             }   
@@ -56,7 +56,7 @@ public class Puppy extends NPC {
             switch(option) {
                 case 1:
                     say("Yay! Fetch!");
-                    Game.print("The puppy runs off and returns with a ball. You now have a ball");
+                    Game.print("The puppy runs off and returns with a ball. You now have a ball\n");
                     Item ball = new Item("ball", "a small slimey ball");
                     Game.inventory.add(ball);
     
@@ -64,7 +64,7 @@ public class Puppy extends NPC {
     
                 case 2:
                     say("You're a bad person! I don't like you!");
-                    Game.print("The puppy runs away and doesn't come back");
+                    Game.print("The puppy runs away and doesn't come back\n");
     
                 break;
             }
