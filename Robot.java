@@ -6,7 +6,7 @@ public class Robot extends Item{
     
     @Override
     public void use(){
-        if(getItemInventory("diamond") == null){
+        if(Game.getItemInventory("diamond") == null){
             Game.print("You can't use the robot because you don't have the item to activate it.\n");
         }
 

@@ -6,8 +6,8 @@ public class Bucket extends Item {
 
     @Override
     public void use(){
-        if(currentRoom.getRoomName().equals("Roof Top")){
-            if(getItemInventory("filledBucket") != null){
+        if(Game.currentRoom.getRoomName().equals("Roof Top")){
+            if(Game.getItemInventory("filledBucket") != null){
                 Game.print("Try to fill up the bathtub");
             }
             else{
@@ -16,7 +16,7 @@ public class Bucket extends Item {
         }
 
         else{
-            if(getItemInventory("filledBucket") != null){
+            if(Game.getItemInventory("filledBucket") != null){
                 Game.print("Try to use the bucket to fill somthing up");
             }
             else{
@@ -29,10 +29,10 @@ public class Bucket extends Item {
 
     @Override
     public void fill(){
-        if(currentRoom.getRoomName().equals("Kitchen")){
+        if(Game.currentRoom.getRoomName().equals("Kitchen")){
             Game.print("You used the sink to fill the bucket");
-            getItemInventory("bucket").setName("filledBucket");
-            getItemInventory("filledBucket").setDescription("A blue, large bucket filled with water");
+            Game.getItemInventory("bucket").setName("filledBucket");
+            Game.getItemInventory("filledBucket").setDescription("A blue, large bucket filled with water");
         }
         else{
             Game.print("You can't fill up the bucket here");

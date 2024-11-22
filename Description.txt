@@ -1,0 +1,60 @@
+School Hall
+You are in the school hall.
+#
+#
+Front Door
+You are at the front door.
+#
+#
+Gym
+You are in the gym.
+#
+#
+Locker Room 
+You are in the locker Room.
+#
+#
+Cafeteria
+You are in the cafeteria.
+#
+#
+Kitchen
+You are in the kitchen.
+#
+#
+Janitor Closet
+You are in the janitor's closet.
+#
+#
+Second Floor
+You are on the second floor
+#
+#
+Roof Top
+You are on the roof top.
+#
+#
+Science Room 
+You are in the science lab room.
+#
+#
+Principal Office
+You are in the principal's office.
+#
+#
+Rest Room
+You are in the rest room.
+#
+#
+Storage Room 
+You are in the storage room
+#
+#
+Dream World
+You are in the dream world
+#
+#
+Gas Station
+You are in the gas station
+#
+#

@@ -1,4 +1,6 @@
-public class Item extends Game {
+import java.io.Serializable;
+
+public class Item implements Serializable {
     private String name;
     private String description;
 
@@ -6,6 +8,7 @@ public class Item extends Game {
         super();
         name = n;
         description = d;
+        
     }
 
     public void setName(String n){

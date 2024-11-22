@@ -1,7 +1,8 @@
 import java.util.HashMap;
+import java.io.Serializable;
 
-public class Room {
-    private String description;
+
+public class Room implements Serializable {
     private String name;
     private Room east;
     private Room west;
@@ -10,12 +11,13 @@ public class Room {
     private Room up;
     private Room down;
     private HashMap<String, Item> items = new HashMap<String, Item>();
+    private HashMap<String, NPC> npc = new HashMap<String, NPC>();
 
     private boolean lock;
 
-    public Room(String n, String desc){
-        description = desc;
+    public Room(String n){
         name = n;
+        Game.roomObjects.put(n, this);
     }
 
     public Room getExit(char x){
@@ -62,9 +64,9 @@ public class Room {
     }
 
     public String toString(){
-        return description;
+        String s = this.getDescription(name);
+        return s;
     }
-
 
     public void addItem(String name, Item i){
         items.put(name, i);
@@ -92,6 +94,28 @@ public class Room {
 
     public String getRoomName(){
         return name;
+    }
+
+    public String getDescription(String n){
+        for(String s : Game.rooms.keySet()){
+            if(s.equals(n)){
+                return Game.rooms.get(s);
+            }
+        }
+        return null;
+    }
+
+
+    public void addNPC(String name, NPC x){
+        npc.put(name, x);
+    }
+
+    public NPC getNPC(String name){
+        return npc.get(name);
+    }
+
+    public void removeNPC(String name){
+        npc.remove(name);
     }
 
 }

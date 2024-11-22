@@ -6,16 +6,16 @@ public class Software extends Item {
 
     @Override
     public void use(){
-        if(currentRoom.getExit('u') == null){
+        if(Game.currentRoom.getExit('u') == null){
             Game.print("Try using it to unlock some place\n");
         }
-        else if(currentRoom.getExit('u').getRoomName().equals("Roof Top")){
+        else if(Game.currentRoom.getExit('u').getRoomName().equals("Roof Top")){
             Game.print("You used the system. You can now access the roof top\n");
-            currentRoom.getExit('u').setLock(false);
+            Game.currentRoom.getExit('u').setLock(false);
             
         }
 
-        else if(currentRoom.getExit('s').getRoomName().equals("Front Door")){
+        else if(Game.currentRoom.getExit('s').getRoomName().equals("Front Door")){
             Game.print("It appears that you cannot use the system to unlock the front door.\n");
         }
 

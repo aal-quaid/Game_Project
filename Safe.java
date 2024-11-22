@@ -6,16 +6,16 @@ public class Safe extends Item{
     @Override
     public void open(){
 
-        if(getItemInventory("combination") == null){
+        if(Game.getItemInventory("combination") == null){
             Game.print("The safe is locked and you don't have the combination");
         }
 
         else{
             Game.print("Using the combination, you open the safe and find a diamond inside! Naturally, you pocket the diamond.");
             
-            if(getItemInventory("diamond") == null){
+            if(Game.getItemInventory("diamond") == null){
                 Diamond diamond = new Diamond("diamond", "A sparkley diamond");
-                inventory.add(diamond);
+                Game.inventory.add(diamond);
             }
     
         }

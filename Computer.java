@@ -6,7 +6,7 @@ public class Computer extends Item {
 
     public void open(){
 
-        if(getItemInventory("code") == null){
+        if(Game.getItemInventory("code") == null){
             Game.print("You don't have the passcode to unlock this divice");
         }
 
@@ -15,9 +15,9 @@ public class Computer extends Item {
             Game.print("As you browse thorugh the laptop, you find the secruity system that can unlock the front door in the school hall");
             Game.print("You can now use the software");
 
-            if(getItemInventory("software") == null){
+            if(Game.getItemInventory("software") == null){
                 Software software = new Software("software", "a system that can unlock the front door");
-                inventory.add(software);
+                Game.inventory.add(software);
             }
         }
     }
