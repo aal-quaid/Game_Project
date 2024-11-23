@@ -6,12 +6,12 @@ Front Door
 You are at the front door.
 #
 #
-Gym
-You are in the gym.
+Gymnasium
+You are in the Gymnasium
 #
 #
-Locker Room 
-You are in the locker Room.
+Locker Room
+You are in the locker room.
 #
 #
 Cafeteria
@@ -34,7 +34,7 @@ Roof Top
 You are on the roof top.
 #
 #
-Science Room 
+Science Room
 You are in the science lab room.
 #
 #
@@ -46,7 +46,7 @@ Rest Room
 You are in the rest room.
 #
 #
-Storage Room 
+Storage Room
 You are in the storage room
 #
 #

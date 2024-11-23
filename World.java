@@ -7,7 +7,7 @@ public class World {
 
         Room frontDoor = new Room("Front Door");
 
-        Room gym = new Room("Gym");
+        Room gym = new Room("Gymnasium");
 
         Room lockerRoom = new Room("Locker Room");
 
