@@ -25,17 +25,18 @@ public class World {
 
         Room principalOffice  = new Room("Principal Office");
 
-        Room restRoom  = new Room("Rest Room"); 
+        Room restRoom  = new Room("Rest Room");
 
-        Room storageRoom  = new Room("Storage Room"); 
+        Room storageRoom  = new Room("Storage Room");
 
         Room dreamWorld = new Room("Dream World");
 
         Room gasStation = new Room("Gas Station");
 
-        Item bottle = new Item("bottle", "Empty beer bottle");
-        Item hammer = new Item("hammer", "a small hammer");
-        Item costume = new Item("costume", "A were-wolf costume");
+        //Items
+        Bottle bottle = new Bottle("bottle", "Empty beer bottle");
+        Hammer hammer = new Hammer("hammer", "a small hammer");
+        Costume costume = new Costume("costume", "A were-wolf costume. Appears to be in your size.");
 
         Bucket bucket = new Bucket("bucket", "A blue large bucket");
         BathTub bathtub = new BathTub("bathtub", "A large empty bathtub");
@@ -48,8 +49,13 @@ public class World {
         Key key = new Key("key", "A gold key");
 
 
-        Puppy puppy = new Puppy("puppy", "A hideous puppy wags his tail.");
+        //NPC's
 
+        Puppy puppy = new Puppy("puppy", "A hideous puppy wags his tail.");
+        Cashier cashier = new Cashier("cashier", "A lazy worker");
+
+
+        //Locks
 
         frontDoor.setLock(true);
         schoolHall.setLock(false);
@@ -66,6 +72,7 @@ public class World {
         storageRoom.setLock(true);
 
 
+        //Exit/add Items
         schoolHall.addExit(frontDoor, 's'); //School Hall
         schoolHall.addExit(gym, 'w');
         schoolHall.addExit(cafeteria, 'e');
@@ -82,13 +89,14 @@ public class World {
         dreamWorld.addItem("bathtub", bathtub);
 
         gasStation.addExit(dreamWorld, 'n');
+        gasStation.addNPC("cashier", cashier);
         
         gym.addExit(schoolHall, 'e'); // Gym/lockers
         gym.addExit(lockerRoom, 'n');
     
         lockerRoom.addExit(gym, 's');
         lockerRoom.addItem("bottle", bottle);             // Bottle item
-        lockerRoom.addItem("costume", costume);             // costume item
+        lockerRoom.addItem("costume", costume);             //Costume
 
         
 
@@ -101,7 +109,7 @@ public class World {
         
 
         janitorCloset.addExit(schoolHall, 's'); // Janitor's closet
-        janitorCloset.addItem("hammer", hammer);                   // plunger item
+        janitorCloset.addItem("hammer", hammer);                   // hammer item
 
         secondFloor.addExit(schoolHall, 'd'); // Upstaris/rooms
         secondFloor.addExit(scienceRoom, 'w');

@@ -22,6 +22,8 @@ public class Game{
     public static Scanner input = new Scanner(System.in);           // public scanner
     static Room currentRoom = World.buildWorld();                   // public current room/ builds world
 
+    public static boolean wear = false;
+
     public static void print(Object obj){
         System.out.println(obj.toString());
     }
@@ -94,7 +96,6 @@ public class Game{
 
 
     public static void runGame(){
-        //Scanner input = new Scanner(System.in);
 
         String command; // Player's command
         do{
