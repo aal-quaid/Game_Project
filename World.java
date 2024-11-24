@@ -36,7 +36,7 @@ public class World {
         //Items
         Bottle bottle = new Bottle("bottle", "Empty beer bottle");
         Hammer hammer = new Hammer("hammer", "a small hammer");
-        Costume costume = new Costume("costume", "A were-wolf costume. Appears to be in your size.");
+        Costume costume = new Costume("costume", "A werewolf costume. Appears to be in your size.");
 
         Bucket bucket = new Bucket("bucket", "A blue large bucket");
         BathTub bathtub = new BathTub("bathtub", "A large empty bathtub");

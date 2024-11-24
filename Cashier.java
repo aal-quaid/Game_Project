@@ -38,7 +38,7 @@ public class Cashier extends NPC {
                 if(choice == 2){
                     String[] options2 = {
                         "I demand a tank filled with gas. NOW!!!",
-                        "Then you better give me a tank filled with gas before I change my mind GRRR."
+                        "Then you better give me a tank filled with gas before I change my mind and eat you! GRRR!."
                     };
                     getResponse(options2);
                 }
