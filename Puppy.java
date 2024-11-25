@@ -65,7 +65,7 @@ public class Puppy extends NPC {
                 case 2:
                     say("You're a bad person! I don't like you!");
                     Game.print("The puppy runs away and doesn't come back\n");
-    
+                    
                 break;
             }
         }
