@@ -1,60 +1,92 @@
 School Hall
-You are in the school hall.
+You're in the School Hall. Doorways lead east, west, south and upstairs to the second floor. The exit, south, is locked.
 #
 #
 Front Door
-You are at the front door.
+You're at the Front Door.
 #
 #
 Gymnasium
-You are in the Gymnasium
+You're in the Gymnasium. Doorways lead north and east.
 #
 #
 Locker Room
-You are in the locker room.
+You're in the locker room. Amid the dented lockers, an open one reveals a ragged wolf costume, its matted fur and snarling mask seeming oddly out of place. Doorway leads south.
+#
+#
+Locker Room_A
+You're in the locker room. Amid the dented lockers, there is one that is open, but is empty. Doorway leads south.
 #
 #
 Cafeteria
-You are in the cafeteria.
+You're in the cafeteria. Doorways lead east and west.
 #
 #
 Kitchen
-You are in the kitchen.
+You're in the kitchen. A large metal sink dominates one corner, its faucet dripping steadily into the basin. Nearby, a dusty, oversized bucket rests on the floor, waiting to be put to use. Doorway leads west.
+#
+#
+Kitchen_A
+You're in the kitchen. A large metal sink dominates one corner, its faucet dripping steadily into the basin. Doorway leads west.
 #
 #
 Janitor Closet
-You are in the janitor's closet.
+You are in the janitor's closet. Shelves line the walls, stocked with dusty bottles and old rags. On a low shelf, a hammer lies, its wooden handle worn from years of use. Doorway leads south.
+#
+#
+Janitor Closet_A
+You are in the janitor's closet. Shelves line the walls, stocked with dusty bottles and old rags. Doorway leads south.
 #
 #
 Second Floor
-You are on the second floor
+You are on the second floor. Doorways lead east, west, north, upstairs and downstairs.
 #
 #
 Roof Top
-You are on the roof top.
+You're on the roof top. Near the edge, a mini helicopter rests. In the center, an old, empty bathtub is bolted to the ground, wires snaking from it to a humming machine, as if part of some strange experiment. Doorway leads downstairs
+#
+#
+Root Top_A
+You're on the roof top. Near the edge, a mini helicopter rests. In the center, a filled bathtub is bolted to the ground ready to be used. Doorway leads downstairs.
 #
 #
 Science Room
-You are in the science lab room.
+You're in the science lab room. It's filled with dusty lab tables and the faint scent of chemicals. On one table, a glass bottle glints under the dim light, it appears to have somthing inside. Doorway leads east.
+#
+#
+Science Room_A
+You're in the science lab room. It's filled with dusty lab tables and the faint scent of chemicals. Doorway leads east.
 #
 #
 Principal Office
-You are in the principal's office.
+You're in the principal's office. Office is tidy, with a large wooden desk dominating the room. A computer sits idle on the desk, its screen faintly glowing, while a key rests beside it. Doorway leads west.
+#
+#
+Principal Office_A
+You're in the principal's office. Office is tidy, with a large wooden desk dominating the room. A computer sits idle on the desk, its screen faintly glowing. Doorway leads west.
 #
 #
 Rest Room
-You are in the rest room.
+You are in the rest room. The place stinks. There's nothing useful here. Doorways lead south.
 #
 #
 Storage Room
-You are in the storage room
+You're in the storage room. It's cold and dim, with cobwebs everywhere. Against the far wall sits a huge black safe. Nearby, a small robot stands idle on a crate. A diamond engraving on its chest catches your eye, something valuable might activate it. Doorway leads upstairs.
+#
+#
+Storage Room_A
+You're in the storage room. It's cold and dim, with cobwebs everywhere. Against the far wall sits a huge black safe. Doorway leads upstairs.
 #
 #
 Dream World
-You are in the dream world
+You're in a dream world. You are in the middle of no where. The sky is dark and cloudy with a full moon. Looks like the bathtub has traveled with you, what a relief. You see a gas station up ahead, north.
 #
 #
 Gas Station
-You are in the gas station
+You're in the gas station. The gas station is eerily quiet, its shelves half-stocked with dusty snacks and expired drinks. Behind the counter, the cashier sits motionless, on his phone. Doorway leads south.
+#
+#
+Gas Station_A
+You're in the gas station. The gas station is eerily quiet, its shelves half-stocked with dusty snacks and expired drinks. Behind the counter, the cashier sits motionless, frightened. Doorway leads south.
 #
 #

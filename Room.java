@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class Room implements Serializable {
     private String name;
+    private String desc_label;
     private Room east;
     private Room west;
     private Room north;

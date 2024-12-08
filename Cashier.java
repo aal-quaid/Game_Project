@@ -44,17 +44,6 @@ public class Cashier extends NPC {
                 }
             }
 
-            if(Game.getItemInventory("cash") != null){
-                String[] options3 = {
-                    "You leave some money to pay for the gas",
-                    "You just take the gas"
-                };
-
-                choice = 3;
-
-                getResponse(options3);
-            }
-
             choice = 0;
 
         }
@@ -101,7 +90,7 @@ public class Cashier extends NPC {
                     say("Yeah of course, anything you need!!");
                     Game.print("You recived a tank full of gas. Nice.\n");
 
-                    Item gas = new Item("gas", "A tank filled with gas");
+                    Gas gas = new Gas("gas", "A tank filled with gas");
                     Game.inventory.add(gas);
                     choice = 1;
                 break;
@@ -119,23 +108,25 @@ public class Cashier extends NPC {
                 say("Yeah of course, anything you need!!");
                 Game.print("You recived a tank full of gas. Nice.\n");
 
-                Item gas = new Item("gas", "A tank filled with gas");
+                Gas gas = new Gas("gas", "A tank filled with gas");
                 Game.inventory.add(gas);
             }
         }
 
-        if(choice == 3){
-            switch(option) {
-                case 1:
-                    Game.print("You may have scared the man half to death, but at least you payed for it\n");
-                break;
-    
-                case 2:
-                    Game.print("WOW. You really just full on robbed the place\n");
-                break;
-            } 
-        }
+    }
 
+    public void give(Item i){
+        if(Game.getItemInventory(i.getName()) == null){
+            Game.print("You dont have such item");
+        }
+        else if(i.getName() == "cash"){
+            Game.print("You gave the " + i.getName() + " to the cashier");
+            Game.print("The cashier takes your money and ignores you. What a douchebag. It's payback time.\n");
+            Game.inventory.remove(i);
+        }
+        else{
+            Game.print("You can't give the " + i.getName() + " to the cashier");
+        }
     }
 }
 

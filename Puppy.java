@@ -70,4 +70,17 @@ public class Puppy extends NPC {
             }
         }
     }
+
+    public void give(Item i){
+        if(Game.getItemInventory(i.getName()) == null){
+            Game.print("You dont have such item");
+        }
+        else if(i.getName() == "toy"){
+            Game.print("You gave the " + i.getName() + " to the puppy");
+            Game.inventory.remove(i);
+        }
+        else{
+            Game.print("You can't give the " + i.getName() + " to the puppy");
+        }
+    }
 }

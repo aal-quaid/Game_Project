@@ -44,9 +44,11 @@ public class World {
         Computer computer = new Computer("computer", "the principal's computer");
         Robot robot = new Robot("robot", "a small robot");
 
-        Combination combination = new Combination("combination", "combination for the black safe");
         Safe safe = new Safe("safe", "It's an impressive safe!");
         Key key = new Key("key", "A gold key");
+
+        Item toy = new Item("toy", "a toy");
+        Helicopter helicopter = new Helicopter("helicopter", "a mini helicopter");
 
 
         //NPC's
@@ -84,18 +86,18 @@ public class World {
 
         frontDoor.addExit(dreamWorld, 's');
 
-        dreamWorld.addExit(frontDoor, 'n');
-        dreamWorld.addExit(gasStation, 's');    //Dream world
+        dreamWorld.addExit(frontDoor, 's');
+        dreamWorld.addExit(gasStation, 'n');    //Dream world
         dreamWorld.addItem("bathtub", bathtub);
 
-        gasStation.addExit(dreamWorld, 'n');
+        gasStation.addExit(dreamWorld, 's');
         gasStation.addNPC("cashier", cashier);
         
         gym.addExit(schoolHall, 'e'); // Gym/lockers
         gym.addExit(lockerRoom, 'n');
+        gym.addItem("toy", toy);
     
         lockerRoom.addExit(gym, 's');
-        lockerRoom.addItem("bottle", bottle);             // Bottle item
         lockerRoom.addItem("costume", costume);             //Costume
 
         
@@ -103,6 +105,7 @@ public class World {
         cafeteria.addExit(schoolHall, 'w'); // Cafeteria/Kitchen
         cafeteria.addExit(kitchen, 'e');
         cafeteria.addNPC("puppy", puppy);
+        
         
         kitchen.addExit(cafeteria, 'w');
         kitchen.addItem("bucket", bucket);
@@ -117,11 +120,12 @@ public class World {
 
         roofTop.addExit(secondFloor, 'd');
         roofTop.addItem("bathtub", bathtub);
+        roofTop.addItem("helicopter", helicopter);
 
         scienceRoom.addExit(secondFloor, 'e');
         
 
-        scienceRoom.addItem("combination", combination); // combination
+        scienceRoom.addItem("bottle", bottle);             // Bottle item
 
         secondFloor.addExit(principalOffice, 'e');
         principalOffice.addExit(secondFloor, 'w');

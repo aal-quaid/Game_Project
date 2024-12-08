@@ -12,8 +12,8 @@ public class Computer extends Item {
 
         else{
             Game.print("Using the code you received from the robot, you unlock the computer.\n");
-            Game.print("As you browse thorugh the laptop, you find the secruity system that can unlock the front door in the school hall");
-            Game.print("You can now use the software");
+            Game.print("As you browse thorugh the computer, you find the secruity system that can unlock the front door in the school hall");
+            Game.print("You can now use the software anywhere");
 
             if(Game.getItemInventory("software") == null){
                 Software software = new Software("software", "a system that can unlock the front door");

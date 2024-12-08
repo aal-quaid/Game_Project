@@ -1,4 +1,3 @@
-//import java.util.Iterator;
 public class Bucket extends Item {
     public Bucket(String name, String description){
         super("bucket", "A blue, large bucket");
@@ -29,7 +28,7 @@ public class Bucket extends Item {
 
     @Override
     public void fill(){
-        if(Game.currentRoom.getRoomName().equals("Kitchen")){
+        if(Game.currentRoom.getRoomName().equals("Kitchen_A")){
             Game.print("You used the sink to fill the bucket");
             Game.getItemInventory("bucket").setName("filledBucket");
             Game.getItemInventory("filledBucket").setDescription("A blue, large bucket filled with water");
