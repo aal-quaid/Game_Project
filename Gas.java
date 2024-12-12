@@ -7,6 +7,7 @@ public class Gas extends Item {
     public void use(){
         if(Game.currentRoom.getRoomName().equals("Roof Top")){
             Game.print("You used the gas to fill up the helicopter. You then fly the hell out of there.\n");
+            Game.processCommand("x");
         }
 
         else{

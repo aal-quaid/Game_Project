@@ -32,6 +32,7 @@ public class Bucket extends Item {
             Game.print("You used the sink to fill the bucket");
             Game.getItemInventory("bucket").setName("filledBucket");
             Game.getItemInventory("filledBucket").setDescription("A blue, large bucket filled with water");
+            Game.processCommand("x");
         }
         else{
             Game.print("You can't fill up the bucket here");

@@ -1,0 +1,58 @@
+Directions are  single lower case letters (n,e,s,w)
+the steps in quotation marks is what you should type in
+
+Go west
+Go north        //Takes you to the locker room
+"take costume" //You pick up the wolf costume in the locker
+
+Go south
+Go east three times     //Take you to the kitchen
+"take bucket"
+"fill bucket"   //Fills the bucket up with water
+
+Go west two times
+Go north        //takes you to the janitor's closet
+"take hammer"
+
+Go south
+Go up           //Take you to the second floor
+Go west         //Takes you to the science lab room
+"take bottle"
+"use hammer"    //Uses hammer to break bottle
+Gets cash and a combination
+
+Go east two times   //Takes you to the principal's office
+"take key"
+Go west
+
+Go down
+"use key"       //Uses the key to unlock the storage room
+Go down
+"open safe"     //Uses the combination to open the safe
+Gets a diamond
+"take robot"
+"use diamond"   //Uses the diamond to activate the robot
+Gets a code
+
+Go up two times
+Go east         //takes you to the princial's office again
+"open computer"     //Uses the code to unlock the computer
+gets a software app
+
+Go west
+"use software"      //Uses software to unlock the rooftop door
+Go up
+"fill bathtub"      //Uses the bucket of water to fill the bathtub machine
+"use bathtub"       //Takes you to the dream world
+
+Go north
+"talk cashier"      //Talks to the cashier to find out that he believes in werewolves
+"give cash to cashier"(optional)
+"use costume"       //You put on the costume to scare the cashier
+"talk cashier"
+Gets gas
+
+Go south
+"use bathtub"       //Takes you back to the rooftop
+"use gas" or "use helicopter"      //You use the helicopter to escape
+You beat the game
