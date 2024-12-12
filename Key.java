@@ -11,7 +11,6 @@ public class Key extends Item{
         else if(Game.currentRoom.getExit('d').getRoomName().equals("Storage Room")){
             Game.print("You used the key to open the storage room");
             Game.currentRoom.getExit('d').setLock(false);
-            
         }
         else
             Game.print("Try using it to open the storage room ");
